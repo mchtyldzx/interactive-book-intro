@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3D Book Intro Animation - Three.js Demo</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="intro-container" class="intro-container">
+        <canvas id="scene-canvas"></canvas>
+        
+        <div class="intro-overlay">
+            <h1 class="intro-title">Interactive 3D Demo</h1>
+            <p class="intro-subtitle">Click the book to continue or move your mouse to interact</p>
+        </div>
+        
+        <div id="loading-indicator" class="loading-indicator">
+            <div class="loading-spinner"></div>
+            <p>Preparing interactive experience...</p>
+        </div>
+    </div>
+    
+    <div id="main-content" class="main-content">
+        <header class="header">
+            <nav class="navigation">
+                <a href="https://github.com/mchtyldzx" target="_blank">GitHub</a>
+                <a href="#features" class="smooth-scroll">Features</a>
+            </nav>
+        </header>
+        
+        <main class="content-wrapper">
+            <section class="hero-section">
+                <h1>3D Interactive Book Intro Animation</h1>
+                <p>A cinematic Three.js + GSAP showcase project</p>
+                <div class="demo-badges">
+                    <span class="badge">Three.js</span>
+                    <span class="badge">GSAP</span>
+                    <span class="badge">3D Animation</span>
+                    <span class="badge">Interactive</span>
+                </div>
+            </section>
+            
+            <section class="content-grid">
+                <div class="content-card">
+                    <h3>🎨 3D Graphics</h3>
+                    <p>Procedurally generated book model with PBR materials, dynamic lighting, and real-time shadows using Three.js.</p>
+                </div>
+                <div class="content-card">
+                    <h3>✨ Smooth Animations</h3>
+                    <p>GSAP-powered transitions with elastic easing, parallax effects, and physics-based floating motion.</p>
+                </div>
+                <div class="content-card">
+                    <h3>⚡ Performance</h3>
+                    <p>Optimized rendering with adaptive quality, mobile support, and efficient resource management.</p>
+                </div>
+            </section>
+            
+            <section id="features" class="tech-section">
+                <h2>Technical Features</h2>
+                <ul class="feature-list">
+                    <li>✅ Procedural 3D book generation with decorative elements</li>
+                    <li>✅ Multi-light system with dynamic golden lighting</li>
+                    <li>✅ Custom feather cursor with smooth tracking</li>
+                    <li>✅ Mouse parallax and interactive rotation</li>
+                    <li>✅ Atmospheric particle system</li>
+                    <li>✅ Responsive design (desktop, tablet, mobile)</li>
+                    <li>✅ Accessibility support (reduced motion)</li>
+                    <li>✅ Memory-efficient cleanup and disposal</li>
+                </ul>
+            </section>
+            
+        </main>
+        
+        <footer class="footer">
+            <p>Created as a portfolio showcase project</p>
+            <p>Three.js r128 • GSAP 3.12.5 • Vanilla JavaScript</p>
+        </footer>
+    </div>
+    
+    <div id="custom-cursor" class="custom-cursor"></div>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
+
