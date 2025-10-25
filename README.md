@@ -43,4 +43,22 @@ python -m http.server 8000
 ```
 
 
+## Customization
+
+Change book colors in `main.js`:
+```javascript
+const coverMaterial = new THREE.MeshStandardMaterial({
+    color: 0x6b4423,  // Change this
+    roughness: 0.8,
+    metalness: 0.1
+});
+```
+
+Adjust animation speed in `main.js`:
+```javascript
+book.position.y = Math.sin(time * 0.5) * 0.3;
+//                              ^^^     ^^^
+//                           speed   amplitude
+```
+
  Inspired by website intros like [ImaginaryOnes](https://imaginaryones.com/).
